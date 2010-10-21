@@ -1,0 +1,7 @@
+{
+  "name": "wabu",
+  "version": "0.1",
+  "author": "M@ McCray",
+  "main": "./lib/wabu",
+  "directories" : { "lib" : "./lib" }
+}
