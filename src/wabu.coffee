@@ -296,9 +296,11 @@ global.default_options = exports.default_options= (options)->
 
 WABU_TEMPLATE="""
 
-require 'wabu' unless bundle?
+require 'wabu/tasks' unless bundle?
 
-#default_options preserve: yes
+# You can specify default options for all bundles here
+#default_options 
+#  preserve: yes
 
 # bundle "lib/wabu.js",
 #   source: "src/wabu.coffee"

@@ -12,7 +12,7 @@ unless wabu?
 
 
 option '-w', '--watch',      'Watch files for change and automatically recompile'
-option '-c', '--compress',   'Compress files via YUIC'
+option '-c', '--compress',   'Compress files'
 option '-q', '--quiet',      'Suppress STDOUT messages'
 option '-p', '--preserve',   'Saves assembled source files'
 

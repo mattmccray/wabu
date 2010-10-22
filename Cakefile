@@ -2,7 +2,7 @@ unless bundle?
   try
     require './src/tasks'
   catch err
-    require 'wabu'
+    require 'wabu/tasks'
 
 
 bundle "lib/wabu/index.js",
