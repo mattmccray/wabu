@@ -1,7 +1,19 @@
 {
-  "name": "wabu",
-  "version": "0.1",
-  "author": "M@ McCray",
-  "main": "./lib/wabu",
-  "directories" : { "lib" : "./lib" }
+  "name":         "wabu",
+  "description":  "Web App Bundling Utility -- For Coffee and LESS.",
+  "author":       "M@ McCray <darthapo@gmail.com> (http://mattmccray.com)",
+  "homepage":     "http://github.com/darthapo/wabu",
+  "version":      "0.1.0",
+//  "bin":{         "wabu" : "./bin/wabu" },
+  "main":         "./lib/wabu",
+  "repository":{  "type": "git", "url": "http://github.com/darthapo/wabu.git" },
+  "directories":{
+    "lib": "./lib",
+    "bin": "./bin"
+    "src": "./source"
+  },
+  "dependencies":{ 
+    "coffee-script": ">=0.9.4",
+    "less": ">=1.0.32"
+  }
 }

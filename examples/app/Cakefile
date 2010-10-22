@@ -1,0 +1,7 @@
+require '../../source/tasks' unless bundle?
+
+
+bundle "app.js", source:"source/coffee/main"
+
+
+bundle "theme.css", source:"source/less/theme"

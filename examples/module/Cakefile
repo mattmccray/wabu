@@ -1,0 +1,31 @@
+require '../../source/tasks' unless bundle?
+
+# Default options, if they are supplied on the cmdline
+#default_options preserve: yes
+
+
+bundle "lib/wabu.js",
+  source: "src/wabu.coffee"
+  preserve: yes
+  compress:
+    enable: yes
+
+bundle "lib/wabu/cake.js",
+  source: "src/wabu/cake.coffee"
+  enable: no
+
+bundle "lib/wabu/cli.js",
+  source: "src/wabu/cli.coffee"
+  enable: no
+
+bundle "bin/wabu",
+  enable: no
+  source: "src/wabu/bin.coffee"
+  shebang: "#!/usr/bin/env node"
+  coffee:
+    noWrap: yes
+  compress: 
+    enable: no
+    output: "bin/wabu"
+
+
